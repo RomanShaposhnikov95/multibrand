@@ -58,15 +58,15 @@ priceRanges.forEach(el => {
         downPriceInput.value = downPrice;
         upPriceInput.value   = upPrice;
 
-        const numberDown = Number(downPrice.substr(0, downPrice.length - 1).trim());
-        const numberUp = Number(upPrice.substr(0, upPrice.length - 1).trim());
-        const maxValue = Number(upPriceInput.getAttribute('data-max'))
+        // const numberDown = Number(downPrice.substr(0, downPrice.length - 1).trim());
+        // const numberUp = Number(upPrice.substr(0, upPrice.length - 1).trim());
+        // const maxValue = Number(upPriceInput.getAttribute('data-max'))
 
-        if(numberDown > 0 || numberUp < maxValue) {
-            clearBtnRange.classList.remove('d-none')
-        } else {
-            clearBtnRange.classList.add('d-none')
-        }
+        // if(numberDown > 0 || numberUp < maxValue) {
+        //     clearBtnRange.classList.remove('d-none')
+        // } else {
+        //     clearBtnRange.classList.add('d-none')
+        // }
 
         retrieveFilterValue()
     });
@@ -85,53 +85,53 @@ priceRanges.forEach(el => {
 
 // clear sliders value
 
-clearBtnRange.addEventListener('click', (e) => {
-    let filterPrices = document.querySelector('.filter-price');
-    let priceRange = filterPrices.querySelector('.js-price-range');
-    let priceRangeInputs = filterPrices.querySelectorAll('.filter-price__flex-row input');
+// clearBtnRange.addEventListener('click', (e) => {
+//     let filterPrices = document.querySelector('.filter-price');
+//     let priceRange = filterPrices.querySelector('.js-price-range');
+//     let priceRangeInputs = filterPrices.querySelectorAll('.filter-price__flex-row input');
+//
+//     priceRangeInputs.forEach(function (input, handle) {
+//         let maxPrice = (handle) ? input.getAttribute('data-max') : 0;
+//
+//         priceRange.noUiSlider.setHandle(handle, maxPrice);
+//     });
+// })
 
-    priceRangeInputs.forEach(function (input, handle) {
-        let maxPrice = (handle) ? input.getAttribute('data-max') : 0;
-
-        priceRange.noUiSlider.setHandle(handle, maxPrice);
-    });
-})
-
-const accFilter = document.querySelectorAll('.accordion-filter')
-
-accFilter.forEach(el => {
-    const check = el.querySelectorAll('.check')
-    const clearBtn = el.querySelector('.clearBtn')
-
-    check.forEach(el => {
-        el.addEventListener('change', () => {
-            atLeastOneCheckboxIsChecked()
-            if(atLeastOneCheckboxIsChecked()) {
-                clearBtn.classList.remove('d-none')
-            } else {
-                clearBtn.classList.add('d-none')
-            }
-        })
-    })
-
-    clearBtn.addEventListener('click', () => {
-        CheckboxIsCheckedFalse()
-        clearBtn.classList.add('d-none')
-    })
-
-    function atLeastOneCheckboxIsChecked(){
-        const checkboxes = Array.from(el.querySelectorAll(".check"));
-        return checkboxes.reduce((acc, curr) => acc || curr.checked, false);
-    }
-
-    function CheckboxIsCheckedFalse(){
-        check.forEach(el => {
-            if(el.checked) {
-                el.checked = !el.checked
-                retrieveFilterValue()
-            }
-        })
-    }
-})
+// const accFilter = document.querySelectorAll('.accordion-filter')
+//
+// accFilter.forEach(el => {
+//     const check = el.querySelectorAll('.check')
+//     const clearBtn = el.querySelector('.clearBtn')
+//
+//     check.forEach(el => {
+//         el.addEventListener('change', () => {
+//             atLeastOneCheckboxIsChecked()
+//             if(atLeastOneCheckboxIsChecked()) {
+//                 clearBtn.classList.remove('d-none')
+//             } else {
+//                 clearBtn.classList.add('d-none')
+//             }
+//         })
+//     })
+//
+//     clearBtn.addEventListener('click', () => {
+//         CheckboxIsCheckedFalse()
+//         clearBtn.classList.add('d-none')
+//     })
+//
+//     function atLeastOneCheckboxIsChecked(){
+//         const checkboxes = Array.from(el.querySelectorAll(".check"));
+//         return checkboxes.reduce((acc, curr) => acc || curr.checked, false);
+//     }
+//
+//     function CheckboxIsCheckedFalse(){
+//         check.forEach(el => {
+//             if(el.checked) {
+//                 el.checked = !el.checked
+//                 retrieveFilterValue()
+//             }
+//         })
+//     }
+// })
 
 

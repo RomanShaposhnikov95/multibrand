@@ -129,8 +129,8 @@ ul, li {
   transition: all 0.9s;
 }
 
-.more a {
-  color: green !important;
+.bg-white {
+  background: #FFFFFF;
 }
 
 .header-top {
@@ -1900,7 +1900,7 @@ ul, li {
     border-left: none;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 450px) {
   .cards, .category_wrapper .product .cards {
     row-gap: 60px;
   }
