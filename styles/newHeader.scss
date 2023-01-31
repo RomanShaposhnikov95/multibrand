@@ -360,6 +360,35 @@
             left: unset;
             background-color: #E8E8E8;
           }
+
+          button {
+            position: relative;
+
+            .counter {
+              position: absolute;
+              height: 14px;
+              min-width: 14px;
+              color: #212222;
+              font-size: 8px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 10px;
+              text-align: center;
+              background-color: #E8E8E8;
+              border-radius: 50%;
+              bottom: 7px;
+              right: 7px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 2px;
+            }
+
+            .active-counter {
+              color: #FFFFFF;
+              background-color: #212222;
+            }
+          }
         }
       }
     }

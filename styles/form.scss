@@ -33,7 +33,6 @@
 
   &-error {
     width: 100%;
-    height: 50px;
     line-height: 22px;
     background-color: #CC1433;
     padding: 14px 24px;
@@ -306,4 +305,29 @@ select.is-invalid, .was-validated select:invalid + .ss-main{
 
   }
 }
+
+
+@media (max-width: 450px) {
+  //.delivery-left-group .payment label .cart-svg {
+  //  flex-direction: column !important;
+  //  row-gap: 2px;
+  //  align-items: center;
+  //}
+
+  //.delivery-left-group .payment label {
+  //  align-items: center !important;
+  //}
+
+  //.delivery-left-group .payment label .cart-svg {
+  //  flex-direction: column !important;
+  //  row-gap: 2px;
+  //  align-items: center;
+  //}
+
+  .delivery-left-group .payment label {
+    flex-direction: column-reverse !important;
+    row-gap: 7px;
+  }
+
+  }
 

@@ -364,20 +364,21 @@
     }
 
     &-link {
-      margin-top: 23px;
+      margin-top: 10px;
+      width: 100%;
       a {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #1E477B;
+        color: #212222;
         font-size: 14px;
-        font-weight: 500;
-        letter-spacing: -0.4px;
-        line-height: 22px;
+        letter-spacing: 0;
+        line-height: 20px;
+        text-align: center;
+        background-color: #EDEDED;
+        padding: 10px 15px;
+        width: 100%;
 
-        svg {
-          margin-right: 8px;
-        }
       }
     }
 

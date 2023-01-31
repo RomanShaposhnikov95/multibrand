@@ -388,6 +388,32 @@ ul, li {
   left: unset;
   background-color: #E8E8E8;
 }
+.header-bottom .boxes .panel .btn-group button {
+  position: relative;
+}
+.header-bottom .boxes .panel .btn-group button .counter {
+  position: absolute;
+  height: 14px;
+  min-width: 14px;
+  color: #212222;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 10px;
+  text-align: center;
+  background-color: #E8E8E8;
+  border-radius: 50%;
+  bottom: 7px;
+  right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.header-bottom .boxes .panel .btn-group button .active-counter {
+  color: #FFFFFF;
+  background-color: #212222;
+}
 .header-bottom .lang {
   padding: 24px;
   column-gap: 4px;
@@ -3240,7 +3266,6 @@ ul, li {
 }
 .form-error {
   width: 100%;
-  height: 50px;
   line-height: 22px;
   background-color: #CC1433;
   padding: 14px 24px;
@@ -3449,6 +3474,12 @@ select.is-invalid .ss-single-selected, .was-validated select:invalid + .ss-main 
   }
   .form .register .form-content-wrap {
     width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .delivery-left-group .payment label {
+    flex-direction: column-reverse !important;
+    row-gap: 7px;
   }
 }
 .title-xl {
@@ -3830,20 +3861,21 @@ select.is-invalid .ss-single-selected, .was-validated select:invalid + .ss-main 
   line-height: 30px;
 }
 .delivery-right-link {
-  margin-top: 23px;
+  margin-top: 10px;
+  width: 100%;
 }
 .delivery-right-link a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1E477B;
+  color: #212222;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: -0.4px;
-  line-height: 22px;
-}
-.delivery-right-link a svg {
-  margin-right: 8px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  background-color: #EDEDED;
+  padding: 10px 15px;
+  width: 100%;
 }
 .delivery-right:before {
   content: "";
