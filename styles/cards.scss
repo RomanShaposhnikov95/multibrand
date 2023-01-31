@@ -16,6 +16,15 @@
       .link-wrap {
         margin-top: 11px;
         margin-bottom: 50px;
+
+        a {
+          text-decoration: underline;
+
+
+          &:hover {
+            color: #212222;
+          }
+        }
       }
     }
   }

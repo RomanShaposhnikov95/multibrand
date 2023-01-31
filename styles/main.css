@@ -1571,6 +1571,12 @@ ul, li {
   margin-top: 11px;
   margin-bottom: 50px;
 }
+.product .container .cards-wrapper .link-wrap a {
+  text-decoration: underline;
+}
+.product .container .cards-wrapper .link-wrap a:hover {
+  color: #212222;
+}
 
 .cards {
   width: 100%;
