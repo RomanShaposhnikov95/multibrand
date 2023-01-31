@@ -1,0 +1,46 @@
+.advantage {
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11px;
+  }
+
+  &_item {
+    width: calc(33.3% - 8px);
+    padding: 40px;
+    background-color: #212222;;
+    &_icon {
+
+    }
+
+    &_title{
+      margin-top: 14px;
+      color: $white;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.29px;
+      line-height: 30px;
+    }
+
+    &_descr {
+      margin-top: 4px;
+      opacity: 0.7;
+      color: $white;
+      font-size: 15px;
+      letter-spacing: -0.4px;
+      line-height: 22px;
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .advantage {
+    &_item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

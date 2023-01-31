@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+html, body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0
+}
+
+
+$blue: #1E477B;
+$blueLight: #5CC1DE;
+$red: #D91E03;
+$grey: #EDF0F4;
+$greyLight: #8A9199;
+$greyDark: #5C6166;
+$black: #292C33;
+$white: #FFFFFF;
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  background-color: #F1F2F4;
+  padding-bottom: 150px;
+  min-height: calc(100% - 150px);
+}
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.title-xl {
+  line-height: 42px;
+  color: #212222;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.title-l {
+  color: $black;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -0.42px;
+  line-height: 42px;
+}
+
+.title-m {
+  color: #212222;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 42px;
+  text-align: center;
+}
+
+.title-s {
+  color: #212222;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.link {
+  color: #212222;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.btn {
+  width: 100%;
+  padding: 13px 24px;
+  background-color: #212222;
+  line-height: 22px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: unset;
+
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0;
+
+  &:hover {
+    color: #FFFFFF;
+  }
+
+  svg {
+    margin-right: 14px;
+  }
+}
+
+
+.activeSvg {
+  transform: rotate(180deg);
+
+  .svgColor {
+    fill: #5CC1DE;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.shrinkable {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.9s;
+}
+
+
+.more {
+  a {
+    color: green !important;
+  }
+}
+
+
+//@media (max-width: 778px) {
+//  body {
+//    margin-top: 60px;
+//  }
+//}
+
+
+
+
+

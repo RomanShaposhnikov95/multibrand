@@ -1,0 +1,30 @@
+.breadcrumb {
+  margin: 0;
+  &-item {
+    color: #666666;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+     a {
+       color: #666666;
+     }
+  }
+
+  &-item+&-item {
+    padding-left: 14px;
+    &:before {
+      padding-right: 14px;
+      color: #666666;
+    }
+  }
+
+  .active {
+    opacity: 0.5;
+  }
+}
+
+.breadcrumb-container {
+  padding: 12px 0;
+  background-color: #E8E8E8;
+  margin-bottom: 40px;
+}

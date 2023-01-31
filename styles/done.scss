@@ -1,0 +1,34 @@
+.done {
+  padding: 0 20px;
+  &-wrap {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title-s {
+      text-align: center;
+    }
+
+    &-descr {
+      font-size: 14px;
+      text-align: center;
+      max-width: 570px;
+      margin: -15px 0 30px 0;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 22px;
+
+      a {
+        color: #212222;
+        text-decoration: underline;
+      }
+
+    }
+
+    .title-s {
+      margin: 30px 0;
+    }
+  }
+}

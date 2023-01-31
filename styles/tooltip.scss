@@ -1,0 +1,14 @@
+.tooltip-inner {
+  background-color: rgba(40,44,51,0.9);
+  color: #FFFFFF;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  line-height: 14px;
+  padding: 7px 14px;
+  border-radius: unset;
+}
+
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: rgba(40,44,51,0.9);
+}
