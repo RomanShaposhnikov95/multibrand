@@ -162,6 +162,7 @@ ul, li {
 }
 .header-bottom .navbar {
   padding: 20px 0;
+  background: #FFFFFF;
 }
 .header-bottom .boxes .one {
   order: 2;
