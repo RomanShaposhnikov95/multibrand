@@ -300,6 +300,7 @@ ul, li {
 }
 .header-bottom .boxes .panel .btn-group .search-close {
   height: 50px;
+  min-width: 50px;
   width: 50px;
   background-color: #E8E8E8;
   display: flex;
