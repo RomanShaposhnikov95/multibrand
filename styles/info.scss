@@ -56,15 +56,16 @@
     }
 
     &_descr {
-      color: $greyDark;
-      font-size: 15px;
-      letter-spacing: -0.4px;
-      line-height: 26px;
-      margin-bottom: 24px;
+      color: #666666;
 
-      a {
-        text-decoration: underline;
-      }
+      font-size: 14px;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+      line-height: 26px;
+    }
+
+    a {
+      text-decoration: underline;
     }
   }
 

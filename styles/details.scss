@@ -120,5 +120,25 @@
       }
     }
   }
+}
 
+
+
+
+@media (max-width: 778px) {
+  .details {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    &-gallery {
+      width: 100%;
+    }
+
+    &-info {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
 }
