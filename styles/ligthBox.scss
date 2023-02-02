@@ -16,9 +16,9 @@
 }
 
 
-[lightbox-toggle] {
-  cursor: zoom-in;
-}
+//[lightbox-toggle] {
+//  cursor: zoom-in;
+//}
 .c-lightbox {
   $c: &;
 
@@ -142,7 +142,7 @@
     height: 75%;
     width: 75%;
     text-align: center;
-    cursor: zoom-in;
+    //cursor: zoom-in;
 
     img {
       width: auto;
@@ -151,4 +151,27 @@
       max-width: 90vw;
     }
   }
+}
+
+
+.containertt {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.wrap {
+  width: 30%;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.xzoom-lens {
+  //cursor: url("../assets/img/icons/ic-zoom.svg"), auto !important;
+  border: none !important;
+  box-shadow: unset !important;
 }

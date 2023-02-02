@@ -187,6 +187,8 @@ ul, li {
   font-size: 17px;
   letter-spacing: 0;
   line-height: 23px;
+  padding: 0;
+  margin-right: 30px;
 }
 .header-bottom .boxes .three .dropdown .dropdown-toggle {
   position: relative;
@@ -204,9 +206,6 @@ ul, li {
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
-}
-.header-bottom .boxes .three .dropdown .dropdown-toggle.show {
-  font-weight: bold;
 }
 .header-bottom .boxes .three .dropdown .dropdown-toggle.show:after {
   display: block;
@@ -2584,10 +2583,6 @@ ul, li {
   max-width: 100%;
 }
 
-[lightbox-toggle] {
-  cursor: zoom-in;
-}
-
 .c-lightbox {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   pointer-events: none;
@@ -2692,13 +2687,30 @@ ul, li {
   height: 75%;
   width: 75%;
   text-align: center;
-  cursor: zoom-in;
 }
 .c-lightbox .c-lightbox__image img {
   width: auto;
   height: auto;
   max-height: 90vh;
   max-width: 90vw;
+}
+
+.containertt {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  width: 30%;
+}
+.wrap img {
+  width: 100%;
+}
+
+.xzoom-lens {
+  border: none !important;
+  box-shadow: unset !important;
 }
 
 .details .container {
@@ -3373,7 +3385,7 @@ ul, li {
   line-height: 16px;
 }
 .form-content-wrap .select .ss-arrow span.arrow-up {
-  border-color: #8ED4E8;
+  border-color: #212222;
 }
 .form-content-wrap .select .ss-open-below, .form-content-wrap .select .ss-open-above {
   border-color: #1E477B;
@@ -3860,11 +3872,15 @@ select.is-invalid .ss-single-selected, .was-validated select:invalid + .ss-main 
 }
 .delivery-right-content-item-left-quant {
   margin-top: 2px;
-  color: #212222;
-  font-size: 21px;
-  font-weight: bold;
+  color: #5C6166;
+  font-size: 12px;
+  font-weight: 500;
   letter-spacing: 0;
   line-height: 30px;
+}
+.delivery-right-content-item-left-quant span {
+  font-weight: bold;
+  color: #212222;
 }
 .delivery-right-content-item-right {
   display: flex;
@@ -3909,6 +3925,13 @@ select.is-invalid .ss-single-selected, .was-validated select:invalid + .ss-main 
   margin-top: 19px;
   padding-top: 17px;
   border-top: 3px solid #212222;
+}
+.delivery-right-sum .delivery-right-content-item-left-quant {
+  font-weight: bold;
+  color: #212222;
+  font-size: 21px;
+  letter-spacing: 0;
+  line-height: 30px;
 }
 .delivery-right .result-sum {
   font-size: 21px;
