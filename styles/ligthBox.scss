@@ -169,9 +169,43 @@
   }
 }
 
+.xzoom {
+  box-shadow: unset !important;
+}
+
 
 .xzoom-lens {
-  //cursor: url("../assets/img/icons/ic-zoom.svg"), auto !important;
+  cursor: url("../assets/img/icons/ic-zoom.svg") 10 10, auto !important;
   border: none !important;
   box-shadow: unset !important;
+  //width: 600px !important;
+  //height: 600px !important;
+}
+
+.xzoom-preview {
+  border: 4px solid white !important;
+  box-shadow: unset !important;
+  //width: 600px !important;
+  //height: 600px !important;
+  z-index: 100 !important;
+
+  //img {
+  //  width: 100% !important;
+  //}
+}
+
+
+//.xzoom-source {
+//  border: 3px solid red;
+//}
+
+
+.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+  display: block;
+  max-width: none;
+  max-height: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }

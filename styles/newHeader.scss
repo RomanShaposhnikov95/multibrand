@@ -22,17 +22,20 @@
   }
 
 .header-bottom {
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 1000000;
+    //box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+
+
 
 
   .navbar {
     padding: 20px 0;
     background: #FFFFFF;
   }
-
     .boxes {
       .one {
         order: 2;
@@ -85,12 +88,15 @@
 
           .dropdown-toggle.show {
             //font-weight: bold;
+            //text-shadow:0 0 1px #212222;
 
-
+            font-weight:bold;
 
             &:after {
               display: block;
             }
+
+
           }
 
           ul {
@@ -113,6 +119,33 @@
               color: #FFFFFF;
             }
           }
+        }
+
+        .navbar-nav {
+
+            li {
+              a {
+                text-decoration:none;
+                display:inline-block;
+
+
+                &:hover {
+                  background-color: transparent;
+                }
+
+                &::before {
+                  display: block;
+                  content: attr(title);
+                  font-weight: bold;
+                  height: 0;
+                  overflow: hidden;
+                  visibility: hidden;
+                }
+
+              }
+            }
+
+
         }
       }
 
@@ -401,14 +434,14 @@
 
 .overlay {
   position: fixed;
-  display: none;
+  //display: none;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #000000;
-  opacity: 0.15;
-  z-index: 9;
+  background-color: #212222;
+  opacity: 0.2;
+  z-index: 3;
 }
 
 
@@ -441,9 +474,9 @@
           position: static;
 
 
-          .nav-link {
-            display: inline-flex;
-          }
+          //.nav-link {
+          //  display: inline-flex;
+          //}
 
           .dropdown-toggle {
             position: relative;
@@ -481,6 +514,12 @@
               padding: 5px 0;
               color: #212222;
             }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+            margin-bottom: 10px;
           }
         }
       }
@@ -524,6 +563,7 @@
     line-height: 23px;
     padding-bottom: 20px;
     border-bottom: 1px solid #212222;
+    margin-bottom: 20px;
 
     svg {
       margin-right: 10px;

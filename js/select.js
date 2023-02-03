@@ -1,21 +1,21 @@
 new SlimSelect({
     select: '#location',
-    searchPlaceholder: 'Meklēšana...',
-    searchText: 'nekas nav atrasts',
+    searchPlaceholder: 'Search...',
+    searchText: 'Nothing found',
     showContent: 'down'
 })
 
 
 new SlimSelect({
     select: '#country-courier',
-    searchPlaceholder: 'Meklēšana...',
-    searchText: 'nekas nav atrasts',
+    searchPlaceholder: 'Search...',
+    searchText: 'Nothing found',
     showContent: 'down'
 })
 
 new SlimSelect({
     select: '#city-courier',
-    searchPlaceholder: 'Meklēšana...',
-    searchText: 'nekas nav atrasts',
+    searchPlaceholder: 'Search...',
+    searchText: 'Nothing found',
     showContent: 'down'
 })
