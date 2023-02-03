@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
-@import "cookie.css";
 html, body {
   font-family: "Manrope", sans-serif;
   margin: 0;
@@ -1264,7 +1263,7 @@ ul, li {
 }
 .category {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 120px;
 }
 .category .container {
@@ -4428,6 +4427,123 @@ select.is-invalid .ss-single-selected, .was-validated select:invalid + .ss-main 
 
 .tooltip.bs-tooltip-end .tooltip-arrow::before {
   border-right-color: rgba(40, 44, 51, 0.9);
+}
+
+.cookie {
+  background-color: #212222;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.cookie .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cookie svg {
+  margin-right: 20px;
+}
+.cookie-wrap {
+  width: 79.2%;
+  display: flex;
+  flex-direction: column;
+}
+.cookie-wrap h1 {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+.cookie-wrap p {
+  margin-top: 11px;
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.cookie-wrap p a {
+  color: #B3B3B3;
+  text-decoration: underline;
+}
+.cookie .btn {
+  background-color: #FFFFFF;
+  color: #212222;
+  font-weight: 600;
+  width: unset;
+}
+.cookie-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #212222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.cookie-close svg {
+  margin-right: 0;
+}
+
+@media (max-width: 570px) {
+  .cookie .container {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .cookie .container svg {
+    margin: 0;
+  }
+  .cookie .container h1, .cookie .container p {
+    text-align: center;
+  }
+}
+.more-title {
+  margin: 0 0 10px 0;
+  padding-top: 0;
+}
+
+.more-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+.more-text .spanwrap {
+  width: 100%;
+  position: relative;
+  margin-top: 16px;
+}
+.more-text .spanwrap:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  top: -36px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  padding-left: 0;
+  color: #212222;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
 }
 
 /*# sourceMappingURL=main.css.map */

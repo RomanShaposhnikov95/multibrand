@@ -1,32 +1,73 @@
-function showMore(id){
-    document.getElementById(id+'Overflow').className='';
-    document.getElementById(id+'MoreLink').className='hidden';
-    document.getElementById(id+'LessLink').className='';
-}
+var textArea = document.querySelectorAll('[data-js=content]'),
+    maxText = 200;
 
-function showLess(id){
-    document.getElementById(id+'Overflow').className='hidden';
-    document.getElementById(id+'MoreLink').className='';
-    document.getElementById(id+'LessLink').className='hidden';
+[].forEach.call( textArea, function( el ) {
 
-}
+    var textAreaLength = el.innerHTML.length,
+        teaserText = el.innerHTML.substr(0, maxText),
+        fullText = el.innerHTML,
+        showTeaser = false;
 
-let len = 100;
-let shrinkables = document.getElementsByClassName('shrinkable');
-if (shrinkables.length > 0) {
-    for (let i = 0; i < shrinkables.length; i++){
-        let fullText = shrinkables[i].nextElementSibling.innerHTML;
+    // Check to see if this text length is more
+    // than the max
+    if (textAreaLength >= maxText) {
+        // Set flag
+        showTeaser = true;
 
-        console.log("fullText", shrinkables[i].nextElementSibling.innerHTML)
+        // Set teaser text
+        el.innerHTML = teaserText;
+        el.innerHTML = el.innerHTML + '...';
 
-        if(fullText.length > len){
-            let trunc = fullText.substring(0, len).replace(/\w+$/, '');
-            let remainder = "";
-            let id = i;
-            remainder = fullText.substring(len, fullText.length);
-            shrinkables[i].nextElementSibling.innerHTML = '<span>' + trunc + '<span class="hidden test" id="' + id + 'Overflow">'+ remainder +'</span></span>&nbsp;<a id="' + id + 'MoreLink" href="#!" onclick="showMore(\''+ id + '\');">More</a><a class="hidden" href="#!" id="' + id + 'LessLink" onclick="showLess(\''+ id + '\');">Less</a>';
-            document.getElementById(id+'MoreLink').innerHTML= moreBtn.innerHTML;
-            document.getElementById(id+'LessLink').innerHTML = lessBtn.innerHTML;
-        }
+        // Create button
+
+        let btnWrap =  document.createElement('span');
+        btnWrap.classList.add('spanwrap');
+
+        var button = document.createElement('button');
+        button.innerHTML = 'Show More';
+        button.classList.add('button');
+
+
+        btnWrap.appendChild(button);
+        el.appendChild(btnWrap);
+
+        // Button click event
+        button.onclick = function () {
+            if (showTeaser === true) {
+                // Update flag
+                showTeaser = false;
+
+                // Update button text
+                this.innerHTML = 'Show Less';
+
+                // Show full text
+                el.innerHTML = fullText;
+
+                btnWrap.classList.remove('spanwrap');
+
+                // Re-append the button
+                el.appendChild(btnWrap);
+            } else {
+                // Update flag
+                showTeaser = true;
+
+                // Update button text
+                this.innerHTML = 'Show More';
+
+                // Show teaser text
+                el.innerHTML = teaserText;
+                el.innerHTML = el.innerHTML + '...';
+
+                btnWrap.classList.add('spanwrap');
+
+                // Re-append the button
+                el.appendChild(btnWrap);
+            }
+            return false;
+        };
+    } else {
+        // Show full text
+        el.innerHTML = fullText;
     }
-}
+
+});
