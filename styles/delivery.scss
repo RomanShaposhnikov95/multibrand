@@ -40,6 +40,7 @@
               align-items: center;
               padding-top: 6px;
               padding-right: 3px;
+              border-color: #212222;
             }
           }
         }
@@ -50,7 +51,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          border: 1px solid #D7DAE0;
+          border: 1px solid #BFBFBF;
           background-color: #FFFFFF;
           min-height: 168px;
           font-size: 14px;
@@ -82,6 +83,19 @@
             border: 1px solid #BFBFBF;
             background-color: #FFFFFF;
             box-shadow: 0 3px 3px 0 rgba(89,108,128,0.04);
+          }
+
+          &:hover {
+            &:after {
+              background-color: #212222;
+              content: url("../assets/img/icons/ic-check.svg");
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-top: 6px;
+              padding-right: 3px;
+              border-color: #212222;
+            }
           }
         }
 
@@ -119,6 +133,10 @@
             margin: 0;
           }
 
+          &:hover {
+            border-color: #8C8C8C;
+          }
+
           span {
             display: flex;
             flex-direction: column;
@@ -141,7 +159,6 @@
                 margin-top: 2px;
               }
             }
-
           }
 
           .cart-svg {
@@ -391,7 +408,12 @@
         background-color: #EDEDED;
         padding: 10px 15px;
         width: 100%;
+        border: 1px solid #EDEDED;
 
+        &:hover {
+          border: 1px solid #8C8C8C;
+          background-color: #FFFFFF;
+        }
       }
     }
 

@@ -13,6 +13,7 @@ body * {
 
 body {
   position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -50,7 +51,7 @@ $white: #FFFFFF;
 .main {
   background-color: #F1F2F4;
   padding-bottom: 150px;
-  min-height: calc(100% - 150px);
+  min-height: calc(100vh - 150px);
 }
 
 ul, li {
@@ -96,6 +97,22 @@ ul, li {
   font-size: 17px;
   letter-spacing: 0;
   line-height: 22px;
+
+  &:hover {
+    color: #212222;
+    opacity: 0.7;
+  }
+}
+
+input {
+  outline: none;
+  &:hover {
+    border-color: #8C8C8C !important;
+  }
+
+  &:focus {
+    border-color: #212222 !important;
+  }
 }
 
 .btn {
@@ -117,6 +134,7 @@ ul, li {
 
   &:hover {
     color: #FFFFFF;
+    background-color: #383939;
   }
 
   svg {

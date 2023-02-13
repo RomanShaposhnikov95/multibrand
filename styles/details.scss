@@ -41,10 +41,15 @@
           font-size: 14px;
           letter-spacing: 0;
           line-height: 26px;
+          margin-bottom: 0;
         }
 
         a {
           text-decoration: underline;
+
+          &:hover {
+            color: #212222;
+          }
         }
       }
 
@@ -53,6 +58,7 @@
         column-gap: 5px;
         row-gap: 5px;
         flex-wrap: wrap;
+        margin-top: 8px;
 
         label {
           width: calc(25% - 4px);

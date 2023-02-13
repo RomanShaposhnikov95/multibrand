@@ -76,6 +76,17 @@
 
         li {
           margin: 0 10px 0 0;
+
+          &:hover {
+            a {
+              svg {
+
+                #icon-base {
+                  fill: #383939;
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -7,10 +7,25 @@
     li {
       width: 33.3%;
       position: relative;
+      transition: all 0.9s;
 
       a {
         img {
           max-width: 100%;
+        }
+
+        &:after {
+          content: url("../assets/img/icons/ic-arrow-right-24.svg");
+          position: absolute;
+          padding: 13px;
+          bottom: -100%;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          background-color: #FFFFFF;
+          transition: all 0.4s;
         }
 
         &:hover {
@@ -27,18 +42,10 @@
           }
 
           &:after {
-            content:  url("../assets/img/icons/ic-arrow-right-24.svg");
-            position: absolute;
-            padding: 13px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-            background-color: #FFFFFF;
+            bottom: 50%;
           }
         }
+
       }
 
       span {

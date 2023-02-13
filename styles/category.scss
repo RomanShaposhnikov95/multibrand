@@ -50,6 +50,7 @@
          justify-content: center;
          padding: 7px 15px;
          background-color: #E8E8E8;
+         cursor: pointer;
 
          p {
            color: #292C33;
@@ -66,6 +67,10 @@
            background: transparent;
            border: none;
            margin-left: 5px;
+         }
+
+         &:hover {
+           background: #EDEDED;
          }
        }
 

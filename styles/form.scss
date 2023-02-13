@@ -28,6 +28,10 @@
 
     a {
       color: #212222;
+      &:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -77,6 +81,14 @@
             border: 1px solid red;
           }
         }
+
+        &:hover {
+          border-color: #8C8C8C;
+        }
+
+        &:focus {
+          border-color: #212222;
+        }
       }
 
       .form-control {
@@ -96,10 +108,10 @@
         }
 
         .ss-open-below, .ss-open-above{
-          border-color: #1E477B;
+          border-color: #212222;
           .placeholder {
             span {
-              color: #282C33 !important;
+              color: #212222 !important;
             }
           }
         }
@@ -151,26 +163,38 @@
             max-height: 240px;
           }
 
-          .ss-highlighted {
-            background-color: #F1F2F4;
-            color: #1E477B !important;
-          }
-
           .ss-option {
             padding: 3px 24px 5px 24px;
-            color: #737980;
+            color: #666666;
             font-size: 14px;
-            letter-spacing: -0.4px;
+            letter-spacing: 0;
             line-height: 22px;
 
             &:hover {
               background-color: #F1F2F4;
-              color: #1E477B;
+              color: #212222;
             }
           }
 
           .ss-option-selected {
             background-color: #F1F2F4;
+          }
+
+          .ss-list {
+            &::-webkit-scrollbar {
+              width: 5px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+              background: #E8E8E8;
+              margin-block: 24px 0;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+              background: #7A7A7A;
+            }
           }
         }
       }
@@ -224,6 +248,11 @@
         color: #737980;
         letter-spacing: 0;
         line-height: 22px;
+
+        &:hover {
+          color: #212222;
+          text-decoration: underline;
+        }
       }
     }
 
