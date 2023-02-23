@@ -3556,7 +3556,6 @@ input:focus {
   padding: 13px 24px 15px 24px;
   outline: none;
   border-radius: unset;
-  cursor: pointer;
 }
 .form-content-wrap input.input-error, .form-content-wrap select.input-error, .form-content-wrap .ss-single-selected.input-error {
   border: 1px solid red;
