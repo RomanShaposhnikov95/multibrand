@@ -35,11 +35,8 @@
             &:after {
               background-color: #212222;
               content: url("../assets/img/icons/ic-check.svg");
-              display: flex;
+              display: inline-flex;
               justify-content: center;
-              align-items: center;
-              padding-top: 6px;
-              padding-right: 3px;
               border-color: #212222;
             }
           }
@@ -91,9 +88,6 @@
               content: url("../assets/img/icons/ic-check.svg");
               display: flex;
               justify-content: center;
-              align-items: center;
-              padding-top: 6px;
-              padding-right: 3px;
               border-color: #212222;
             }
           }

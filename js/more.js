@@ -1,3 +1,5 @@
+(function () {
+
 var textArea = document.querySelectorAll('[data-js=content]'),
     maxText = 200;
 
@@ -71,3 +73,5 @@ var textArea = document.querySelectorAll('[data-js=content]'),
     }
 
 });
+
+})()

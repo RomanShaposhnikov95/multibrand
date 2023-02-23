@@ -1,3 +1,5 @@
+(function () {
+
 new SlimSelect({
     select: '#location',
     searchPlaceholder: 'Search...',
@@ -19,3 +21,5 @@ new SlimSelect({
     searchText: 'Nothing found',
     showContent: 'down'
 })
+
+})()

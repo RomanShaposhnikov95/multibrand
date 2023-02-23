@@ -204,10 +204,10 @@
       }
 
       #filter {
-        width: 95%;
+        width: 90%;
         background-color: #FFFFFF;
         position: fixed;
-        z-index: 50;
+        z-index: 1000001;
         top: 0;
         right: 0;
         bottom: 0;
@@ -241,6 +241,13 @@
             cursor: pointer;
           }
         }
+
+
+
+          .btn {
+            display: block !important;
+          }
+
       }
 
     }

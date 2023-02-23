@@ -1,3 +1,5 @@
+(function () {
+
 function openTab(evt, tabName) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -29,3 +31,5 @@ tabLinks.forEach(el => {
 
 
 document.getElementById("defaultOpen").click()
+
+})()

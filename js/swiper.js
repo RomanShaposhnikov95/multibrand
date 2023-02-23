@@ -1,3 +1,5 @@
+(function () {
+
 let swiper = new Swiper(".mySwiperSmall", {
     spaceBetween: 1,
     centeredSlides: true,
@@ -16,3 +18,5 @@ let swiper = new Swiper(".mySwiperSmall", {
         loadPrevNext: true,
     },
 });
+
+})()

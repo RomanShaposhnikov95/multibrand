@@ -1,3 +1,5 @@
+(function () {
+
 function setLocation(curLoc){
     try {
         history.pushState(null, null, curLoc);
@@ -73,3 +75,5 @@ function createPagination(totalPages, page){
     element.innerHTML = liTag;
     return liTag;
 }
+
+})()

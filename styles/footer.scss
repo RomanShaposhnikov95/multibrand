@@ -254,14 +254,6 @@
       align-items: center;
 
       &_item {
-        color: $greyDark;
-        font-size: 14px;
-        letter-spacing: -0.4px;
-        line-height: 26px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-
         &:nth-child(2) {
           order: 2;
           margin-top: 40px;

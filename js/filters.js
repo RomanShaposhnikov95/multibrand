@@ -1,4 +1,6 @@
 // filterData
+
+(function () {
 const isCheckboxOrRadio = type => ['checkbox'].includes(type);
 const {filter} = document.forms;
 
@@ -134,4 +136,5 @@ priceRanges.forEach(el => {
 //     }
 // })
 
+})()
 

@@ -16,6 +16,10 @@ body {
   min-height: 100vh;
 }
 
+*:hover {
+  transition: all 0.4s;
+}
+
 a {
   text-decoration: none;
 }

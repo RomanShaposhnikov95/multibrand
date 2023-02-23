@@ -1,6 +1,10 @@
+(function () {
+
 const tooltips = document.querySelectorAll('.tt')
 tooltips.forEach(t => {
-    new bootstrap.Tooltip(t)
+    new bootstrap.Tooltip(t, {
+        trigger : 'hover'
+    })
 })
 
 
@@ -33,3 +37,5 @@ cartItem.forEach(el => {
         quantity.innerHTML = String(count)
     })
 })
+
+})()

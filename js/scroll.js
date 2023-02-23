@@ -1,3 +1,5 @@
+(function () {
+
 const upBtn = document.getElementById("up");
 
 const backToTop = () => {
@@ -7,4 +9,4 @@ const backToTop = () => {
 
 upBtn.addEventListener("click", backToTop);
 
-
+})()

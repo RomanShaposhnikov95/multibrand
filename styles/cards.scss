@@ -374,12 +374,17 @@
       width: calc(33.3% - 7px);
     }
   }
+
+  .switch-field label {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 595px) {
   .product {
     .container {
-      padding: 0;
+      //padding: 0;
 
       .title-m {
         margin-bottom: 20px;
@@ -404,22 +409,6 @@
     row-gap: 55px;
     &-item {
       width: 50%;
-
-      &-wrap {
-        .btn-wrap {
-          width: calc(100% + 2px);
-          position: absolute;
-          bottom: -57px;
-          left: -1px;
-          right: -1px;
-          padding: 0 10px 20px 10px;
-          background-color: $white;
-          border: 1px solid #D7DAE0;
-          border-top: none;
-          display: block;
-          z-index: 5;
-        }
-      }
 
       &:nth-child(2n) {
         .cards-item-wrap {

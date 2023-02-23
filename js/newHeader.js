@@ -1,3 +1,5 @@
+(function () {
+
 const headerTop = document.querySelector('.header-top');
 const headerBottom = document.querySelector('.header-bottom');
 const navBar = document.querySelector('.navbar-nav');
@@ -20,11 +22,14 @@ let dropdownElementList = [].slice.call(document.querySelectorAll('.menu-open'))
 let dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
     dropdownToggleEl.addEventListener('shown.bs.dropdown', function () {
         changeStyle()
-
     })
 
     dropdownToggleEl.addEventListener('hidden.bs.dropdown', function () {
         changeStyle()
+    })
+
+    dropdownToggleEl.addEventListener("click", () => {
+        console.log("click")
     })
 })
 
@@ -74,8 +79,6 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-
-
 const menu = document.querySelector(".navbar-collapse")
 
 document.addEventListener("mouseup", function(event) {
@@ -87,3 +90,50 @@ document.addEventListener("mouseup", function(event) {
         menuBtn.setAttribute("aria-expanded", "false");
     }
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+    if (window.innerWidth > 992) {
+
+        document.querySelectorAll('.menu-open').forEach(function(everyitem){
+
+            everyitem.addEventListener('mouseover', function(e){
+
+                let el_link = this
+
+                console.log("hellooo", this.parentElement)
+
+                if(el_link != null){
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.add('show');
+                    el_link.setAttribute("aria-expanded", true)
+                    nextEl.classList.add('show');
+                    nextEl.setAttribute("aria-expanded", true)
+                    nextEl.setAttribute("data-bs-popper", "none")
+                }
+
+            });
+            everyitem.addEventListener('mouseleave', function(e){
+                let el_link = this;
+
+                if(el_link != null){
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.remove('show');
+                    el_link.setAttribute("aria-expanded", false)
+                    nextEl.classList.remove('show');
+                    nextEl.setAttribute("aria-expanded", false)
+                    nextEl.removeAttribute("data-bs-popper")
+                }
+            })
+        });
+
+    }
+// end if innerWidth
+});
+
+
+})()
